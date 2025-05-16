@@ -7,6 +7,7 @@ import TodomenuInput, { option } from "../component/Todomenuinput";
 import TodoCheckbox from "../component/Todocheckbox";
 export default function Profile(){
 
+
     const contries:option[] =[{
         value:'Nigeria',
         title:"Nigeria"},
@@ -18,7 +19,7 @@ export default function Profile(){
         title:"Ghana" }]
 return(
     <div>
-        <nav className="w-[100%] h-[60px] m-0 bg-slate-900">
+        <nav className="w-[100%] h-[60px] m-0 bg-slate-900 inline-block">
             <TodoButton  text="menu" btnAction={(()=>{
                 alert('hello')
             })}/>
@@ -28,11 +29,11 @@ return(
    <li className="p-2 inline"><a href="#">settings</a></li>
             </ul>
         </nav>
-        <form className="block m-2 relative left-[30%] right-[30%] top-[40px]">
+        <form className="block m-2 relative left-[30%] right-[30%] top-[40px] p-2">
        <div className="block">
            <TodoInput  onchange={()=>void("")}text={"Name:"}/>
            <TodoInput onchange={()=>void("")}text={"Age:"} />
-           <TodoInput onchange={()=>void("")}text={"Phone Number:"} />
+           <TodoInput onchange={()=>void("")}text={"Phone:"} />
            <TodoInput onchange={()=>void("")}text={"Email:"} />
         </div>
 <TodomenuInput onchange={()=>void("")}

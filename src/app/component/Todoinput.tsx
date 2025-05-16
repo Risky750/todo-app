@@ -1,7 +1,7 @@
 import React from "react";
 
 interface InputProps{
-    onchange:()=>void;
+    onchange:(e:any)=>void;
     text: string;
     
 }
@@ -10,7 +10,7 @@ export default function TodoInput({onchange, text}:InputProps){
         <>
         <div>
             <label>{text}</label>
-        <input onChange={onchange} type="text" className="rounded-[10px] m-3 border-gray-500 border-[0.5px] p-2"/>
+        <input onChange={onchange} type="text" className="block rounded-[5px] m-1 border-gray-000 border-[0.5px]"/>
         </div>
         </>
     )

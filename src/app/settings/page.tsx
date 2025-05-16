@@ -7,10 +7,10 @@ export default function settings(){
         <div className="w-[100%] h-[60px] bg-slate-900" >
             <span className="text-white inline-block">Settings</span>
         </div>
-        <div className="m-[20px]">
-        <Todocard cardAction={()=>{alert("Redirect")}}
+        <div className="block p-[8px]">
+        <Todocard cardAction={()=>{alert("Redirecting")}}
             text={"Notification"}/>
-             <Todocard cardAction={()=>{alert("Redirect")}}
+             <Todocard cardAction={()=>{alert("Redirecting")}}
             text={"Edit Email"}/>
              <Todocard cardAction={()=>{alert("Done")}}
             text={"Export my task"}/>
